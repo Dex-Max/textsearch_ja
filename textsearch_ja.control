@@ -1,0 +1,2 @@
+default_version='9.0.0'
+module_pathname='$libdir/textsearch_ja'

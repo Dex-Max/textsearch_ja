@@ -1,7 +1,5 @@
 SET search_path = public;
 
-BEGIN;
-
 --
 -- Japanese text parser
 --
@@ -125,7 +123,3 @@ CREATE FUNCTION katakana(text)
     RETURNS text
     AS 'MODULE_PATHNAME'
     LANGUAGE C IMMUTABLE STRICT;
-
---
-
-COMMIT;

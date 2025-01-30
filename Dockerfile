@@ -14,5 +14,3 @@ COPY . /textsearch_ja
 WORKDIR /textsearch_ja
 RUN make USE_PGXS=1 PG_CONFIG=/usr/lib/postgresql/17/bin/pg_config
 RUN make USE_PGXS=1 PG_CONFIG=/usr/lib/postgresql/17/bin/pg_config install
-
-RUN cp textsearch_ja.sql /docker-entrypoint-initdb.d/
